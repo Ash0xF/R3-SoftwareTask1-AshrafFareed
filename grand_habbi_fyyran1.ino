@@ -136,7 +136,7 @@ void loop() // Loop forever until end of program
   // Initially gathering data from analog input
   
   Pot_Reading = analogRead(Pot_Port); // Get value from analog input
-  Pot_Output_Range_New = map(Pot_Reading, 0, 1023, 0, 100); // maps from 0 to 99 *IT IS PUT TO 100 ONLY DUE TO TINKERCAD JUMPING 2 TICKS WHICH MADE IT FRUSTRATING TO LOOK AT 98 INSTEAD OF 99 (cosmetic change).
+  Pot_Output_Range_New = map(Pot_Reading, 0, 1023, 0, 99); // maps from 0 to 99
   
   Serial.println(Pot_Output_Range_New); // Print into the Serial Monitor
   
