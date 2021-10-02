@@ -136,7 +136,7 @@ void loop() // Loop forever until end of program
   // Initially gathering data from analog input
   
   Pot_Reading = analogRead(Pot_Port); // Get value from analog input
-  Pot_Output_Range_New = map(Pot_Reading, 0, 1023, 0, 100); // maps from 0 to 99 *IT IS PUT TO 100 ONLY DUE TO TINKERCAD JUMPING 2 TICKS INSTEAD OF 1 ON THE POTENTIOMETER
+  Pot_Output_Range_New = map(Pot_Reading, 0, 1023, 0, 100); // maps from 0 to 99 *IT IS PUT TO 100 ONLY DUE TO TINKERCAD JUMPING 2 TICKS WHICH MADE IT FRUSTRATING TO LOOK AT 98 INSTEAD OF 99 (cosmetic change).
   
   Serial.println(Pot_Output_Range_New); // Print into the Serial Monitor
   
@@ -155,15 +155,15 @@ void loop() // Loop forever until end of program
     
   } else { // If it's only a 1 digit number (e.g. 3) then 
     
-    Int_to_Bits(Digit_Output_Array[0], 1); // Turn first digit into its binary components
+    	Int_to_Bits(Digit_Output_Array[0], 1); // Turn first digit into its binary components
   
   	Display_Seg_Num(CD_Input_Ports, Num_into_Bits, 1); // Display first digit
     
-    Digit_Output_Array[1] = 0; // Set digit to 0.
+    	Digit_Output_Array[1] = 0; // Set digit to 0.
     
-    Int_to_Bits(Digit_Output_Array[1], 0); // bits 0000.
+    	Int_to_Bits(Digit_Output_Array[1], 0); // bits 0000.
     
-    Display_Seg_Num(CD_Input_Ports, Num_into_Bits, 0); // Display second digit
+    	Display_Seg_Num(CD_Input_Ports, Num_into_Bits, 0); // Display second digit
     
   }
   
