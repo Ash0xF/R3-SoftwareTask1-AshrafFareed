@@ -6,12 +6,10 @@
 The circuit was made using TinkerCad. The purpose of this circuit was to implement a way that a potentiometer controls which number from 0 to 99 is displayed to the 2 7-segment displays. This was accomplish by connecting 2 CD4511 decoders (Binary-coded decimal) to the 7-segment displays, where they take 4 inputs from the Arduino and output 7 signal to the 7-segment display. 
 
 ## Demo
----
 
 ![Alt Text](https://i.imgur.com/hnJxPyK.gif "2 7-Segment displays controlled by 2 CD4511")
 
 ## TinkerCad link
----
 
 You can check out the circuit with all the C++ code by clicking [here](https://www.tinkercad.com/things/fjrNXZbFBFk).
 
@@ -19,7 +17,6 @@ You can check out the circuit with all the C++ code by clicking [here](https://w
 
 
 ## Known Issues with TinkerCad
----
 
 **These issues have to do with the simulation of the circuit and not the wiring or code. This is because the analog input of the potentiometer prints the correct number in the serial console.**
 
